@@ -1,0 +1,445 @@
+#Homi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.9s ease, box-shadow 0.9s ease;
+}
+
+#Homi:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+#moreInfo p {
+    font-size: 1rem;
+    color: #0d47a1;
+    margin: 5px 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#Homi #images {
+    display: flex;
+    gap: 20px;
+}
+
+#Homi img {
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#Homi img:hover {
+    transform: scale(1.05);
+}
+
+#Homi h1 {
+    font-size: 2rem;
+    color: #1565c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#toggleLink {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+#toggleLink:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #Homi {
+        flex-direction: column;
+    }
+    #Homi #images {
+        flex-direction: column;
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0f4f8, #e4e9f7); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  max-width: 1200px;
+  margin: 40px auto; 
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  background: linear-gradient(135deg, #ff7a18, #af002d 40%, #319197 100%);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.enter-button {
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin-top: 30px;
+}
+
+
+
+.aboutme-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  max-width: 1200px;
+  margin: 40px auto; 
+}
+
+.aboutme-container h1 {
+  color: #007acc;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.aboutme-content p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Column Styles */
+.column {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4f46e5;
+    margin-bottom: 15px;
+}
+
+/* Timetable Cards */
+.card {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card .details {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card .download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #4f46e5;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.card .download-btn:hover {
+    background-color: #4338ca;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4f46e5;
+}
+
+/* Links Container */
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Link Card Styles */
+.link-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.link-card h2 {
+    font-size: 1.25rem;
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.link-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.link-card a:hover h2 {
+    color: #4338ca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .links-container {
+        grid-template-columns: 1fr;
+    }
+}
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.link-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.link-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.link-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-card h2 {
+    margin-bottom: 10px;
+    color: #1e40af;
+    font-size: 1.25rem;
+}
+
+.link-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.card-list li {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card-list li:hover {
+    transform: translateY(-3px);
+}
+
+a {
+    text-decoration: none;
+    color: #1e40af;
+    font-weight: bold;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.feedback-form input[type="submit"] {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background: #3730a3;
+}

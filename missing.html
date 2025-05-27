@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Missing Item</title>
+  <link rel="stylesheet" href="missing.css">
+</head>
+<body>
+<div class="missing-form-container">
+  <h2>Report a Missing Item</h2>
+  <form id="missingForm" enctype="multipart/form-data">
+    <input name="name" type="text" placeholder="Your Name" required />
+    <input name="rollNo" type="text" placeholder="Roll Number" required />
+    <input name="branch" type="text" placeholder="Branch" required />
+    <input name="hostel" type="text" placeholder="Hostel Number" required />
+    <input name="phone" type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required />
+    <input name="item" type="text" placeholder="Item Name" required />
+    <textarea name="details" placeholder="Item Description or Last Seen Location" required></textarea>
+    <input name="image" type="file" accept="image/*" onchange="previewImage(event)" required />
+    <img id="preview" style="display:none; max-width:100%; border-radius:8px;" />
+    <button type="submit">Submit Report</button>
+  </form>
+</div>
+
+<script>
+  function previewImage(event) {
+    const file = event.target.files[0];
+    const img = document.getElementById('preview');
+    if (file) {
+      img.src = URL.createObjectURL(file);
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  }
+
+  document.getElementById('missingForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Missing item reported successfully!');
+    this.reset();
+    document.getElementById('preview').style.display = 'none';
+  });
+</script>
+</body>
+</html>
