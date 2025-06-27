@@ -14,5 +14,5 @@ function redirectToHome() {
   window.location.href = "Home.html"; 
 }
 function redirectToMyWebsite() {
-    window.location = "https://ghnm5r-3000.csb.app/";
+    window.location = "https://codesandbox.io/p/github/fanofsrinivas/Srinivas-Portfolio/main?workspaceId=ws_WoGeJ1H3N1nW1DuAfzEwfs";
 }
