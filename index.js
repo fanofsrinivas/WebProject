@@ -14,5 +14,5 @@ function redirectToHome() {
   window.location.href = "Home.html"; 
 }
 function redirectToMyWebsite() {
-    window.location = "https://mz6wsk-3000.csb.app/certificates.html";
+    window.location = "https://ghnm5r-3000.csb.app/";
 }
